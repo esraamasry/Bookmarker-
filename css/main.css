@@ -1,0 +1,125 @@
+body
+{
+    background-color: #F7ECDE;
+    
+}
+::selection
+{
+    background-color: #FEC260;
+}
+.bookmarker
+{
+    
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        position: relative;
+        /* background-color: blue; */
+       
+
+}
+.bookmarker::after
+{
+    content: '';
+    background-color: #FEC260;
+    width:25%;
+    height:20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: height .5s;
+
+}
+
+.bookmarker:hover:after
+{
+    height:40px;
+
+}
+
+.bookmark-body
+{
+   border-width: 2px 0 2px 0;
+   border-style: dotted;
+   border-color: #000000;
+}
+.bookmark-head
+{
+    font-family:Righteous, cursive ;
+    font-size: 30px !important;
+    color:  #3ca55c;
+}
+
+.bookmark-inputs
+{
+    font-family:"PT Sans Caption", sans-serif
+
+}
+input
+{
+    border: 1px solid #969695;
+
+}
+input:focus
+{
+    border: 3px solid #FEC260;
+ 
+}
+.my-border
+{
+    border-radius: 5px;
+    padding: 6px;
+    letter-spacing: 1px;
+    
+}
+.submit-btn
+{
+    width:15% !important;
+    border: none !important;
+    background-color: #d14620;
+    color: #fff;
+    border-radius: 4px;
+    padding: 7px 2px;
+    transition: background-color .5s !important;
+}
+.submit-btn:hover
+{
+    background-color: #bb3d1a !important;
+
+}
+.btn-visit
+{
+    background-color: #8A9E23;
+    padding: 6px 20px !important;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 15px;
+
+}
+.btn-visit:hover
+{
+    background-color: #7a8d1a;
+    color: #fff;
+
+
+}
+
+.btn-delete
+{
+    background-color:#df0922;
+    padding: 6px 20px !important;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 15px;
+
+}
+.btn-delete:hover
+{
+    background-color:#D30820;
+    color: #fff;
+
+
+}
